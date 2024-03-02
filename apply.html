@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------font icons cdn-------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- -----------------custome css----------- -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ------------------google fonts cdn--------------- -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
+     <!-- -----------------tailwind cdn------------ -->
+      <script src="https://cdn.tailwindcss.com/"></script>
+
+    <title>Takshashila Form</title>
+    
+    <style>
+        .mynav{
+            background:#3c02b0;
+            padding:0 10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-weight:600;
+        }
+        .mynavlink{
+            padding:10px 20px;
+            cursor:pointer;
+            color:white;
+            background:#3c02b0;
+        }
+        .mynavlink:hover{
+            background:rgba(5, 8, 69, 0.6);
+            color:rgb(235, 216, 12);
+        }
+        
+        .myul{
+            list-style: disc;
+            text-indent: 0px;
+            padding-left: 20px 
+        }
+        
+         .myul > li{
+            padding-top:5px;
+            font-size:1em;
+            font-weight:500;
+        }
+    </style>
+    
+</head>
+<body>
+  <main class="main_conatiner">
+    <!-- ----------------------------------------------header part---------------------------------------- -->
+    <div class="navbar_container">
+        <div class="w-[100px] h-[100px] logo_div">
+              <img src="images/logo-1.png" alt="" >
+        </div>
+       
+       <div class="navbar_content_container">
+        <div class="logo_content">
+            <h1>Takshashila</h1>
+            <h6>school of civil services</h6>
+            <p>future of north east in civil services</p>
+            <p>
+                <span>estd-2022</span>
+                <span>iso 9001:2015 &</span>
+                <span>iso 29990:2010</span></p>
+        </div>
+        <div class="address_content">
+            <div class="address_content_div">
+                <span> <a href="https://www.google.com/maps/dir/26.143314,91.8025948/6th+Floor,+Takshashila+School+of+Civil+Services,+Unique+Avenue+Building,+Bus+Stand,+GS+Rd,+near+Super+Market,+Guwahati,+Assam+781006/@26.1429662,91.7939782,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x375a594049f160bf:0xf515389ce51ef226!2m2!1d91.7962836!2d26.1411661?entry=ttu"><i class="fa-solid fa-location-dot"></i></a></i></span>
+                <div class="address_div">
+                    <p>6B & C, unique avenue, 6th Floor,</p>
+                    <p>super market, gs road, guwahati - 781006</p>
+                </div>
+            </div>
+            <div class="address_content_div">
+                <span><i class="fa-sharp fa-solid fa-phone-volume"></i></span>
+                <p class="toll_free"><a href="tel:1800-212-4490">Toll Free 1800-212-4490</a></p>
+            </div>
+            <div class="address_content_div">
+                <span><i class="fa-solid fa-envelope"></i></i></i></span>
+                <p class="toll_free"><a href = "mailto:takshashilaias@gmail.com">takshashilaias@gmail.com</a></p>
+            </div>
+        </div>
+       </div>
+    </div>
+    
+    <div class="mynav">
+        <a href="index.html" class="mynavlink">Home</a>
+        <a href="notification.html" class="mynavlink">Notification</a>
+        <a href="apply.html" class="mynavlink">Apply</a>
+        <a href="admit.html" class="mynavlink">Download Admit Card</a>
+    </div>
+<!-- ---------------------------------header part ended--------------------------------- -->
+<div class="form_container">
+    <form method="POST" action="https://mrinweb.xyz/Madhavdev-University/apply.php" enctype="multipart/form-data">
+
+            
+    <h1 class="form_heading">Registration Form</h1>
+    
+    <div class="basic_details_container">
+        
+       <!-- <div class="course_select_div" style="width:100%">
+              <label for="select-option">College/Universities</label>
+             <select id="select-option" name="council" class="select_tag" required>
+            <option value="Mising Autonomous Council">Select one</option>
+            <option value="Mising Autonomous Council">ABC College</option>
+            <option value="Deori Autonomous Council">XYZ College</option>
+            <option value="Sonowal Kachari Autonomous Council">PQR College</option>
+             </div> -->
+        
+        <div class="basic_input_div">
+            <label>Name <small style="color:red">*</small></label>
+            <input type="text" placeholder="Full Name..." name="name" required/>
+        </div>
+        <div class="basic_input_div" >
+            <label>Father's Name <small style="color:red">*</small></label>
+            <input type="text" placeholder="Father's Name..." name="fname" required/>
+        </div>
+        <div class="basic_input_div">
+            <label>Mother's Name <small style="color:red">*</small></label>
+            <input type="text" placeholder="Mother's Name..." name="mname" required/>
+        </div>
+        <div class="basic_input_div">
+            <label>Date of Birth <small style="color:red">*</small></label>
+            <input type="date" name="dob" required/>
+        </div>
+        <div class="basic_input_div">
+            <label>Mobile No. <small style="color:red">*</small></label>
+            <input type="text" minlenght="10" maxlenght="10" placeholder="Phone Number..." name="mobile" required/>
+        </div>
+        <div class="basic_input_div">
+            <label>Email</label>
+            <input type="email" placeholder="Email..." name="email"/>
+        </div>
+        <div class="basic_input_div">
+            <label>Present Address <small style="color:red">*</small></label>
+            <textarea placeholder="Permanent address..." rows="4" name="pre_add" cols="50" name="pre_add"></textarea>
+        </div>
+        <div class="basic_input_div">
+            <label>Permanent Address <small style="color:red">*</small></label>
+            <textarea placeholder="Permanent address..."  name="per_add" rows="4" cols="50" name="per_add"></textarea>
+        </div>
+    </div>
+    <!-- -----------------------dynamic form------------------------ -->
+    <div class="dynamic_form_container">
+         <h6 class="dynamic_form_heading">Education Details</h6>
+         <div  id="form-fields" >
+            <!-- ----------s -->
+            <div class="qualifiaction-head" >
+                <h6 class="qualifiaction">HSLC (required) *</h6>
+            </div>
+            <div class="dynamic_form_div">
+                   <div class="dynamic_input_div">
+                      <label>Name of School/College</label>
+                      <input type="text" placeholder="School Name..." name="hslc_school" required/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Board Name</label>
+                      <input type="text" placeholder="Board Name..." name="hslc_board" required/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Subjects Name</label>
+                         <input type="text" placeholder="Subjects Name..." name="hslc_subject" required/>
+                    </div>
+                    <div class="dynamic_input_div">
+                      <label>Total Marks</label>
+                      <input type="number" placeholder="Total Marks..." name="hslc_tm" required/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Obtained Marks</label>
+                      <input type="number" placeholder="Obtained Marks..." name="hslc_mo" required/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Passing Year</label>
+                         <input type="text" placeholder="Passing Year..." name="hslc_year" required/>
+                    </div>
+           </div>
+           <!-- ----------------------------------------------- -->
+           <div class="qualifiaction-head" >
+                <h6 class="qualifiaction">HS (required) *</h6>
+            </div>
+           <div class="dynamic_form_div">
+                   <div class="dynamic_input_div">
+                      <label>Name of School/College</label>
+                      <input type="text" placeholder="School Name..." name="hs_school" required/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Board Name</label>
+                      <input type="text" placeholder="Board Name..." name="hs_board" required/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Subjects Name</label>
+                         <input type="text" placeholder="Subjects Name..." name="hs_subject" required/>
+                    </div>
+                    <div class="dynamic_input_div">
+                      <label>Total Marks</label>
+                      <input type="number" placeholder="Total Marks..." name="hs_tm" required/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Obtained Marks</label>
+                      <input type="number" placeholder="Obtained Marks..." name="hs_mo" required/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Passing Year</label>
+                         <input type="text" placeholder="Passing Year..." name="hs_year" required/>
+                    </div>
+           </div>
+           <!-- -------------------------------------------------------- -->
+           <div class="qualifiaction-head" >
+                <h6 class="qualifiaction">Graduation </h6>
+            </div>
+           <div class="dynamic_form_div">
+                   <div class="dynamic_input_div">
+                      <label>Name of School/College</label>
+                      <input type="text" placeholder="School Name..." name="tdc_school" />
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>University Name</label>
+                      <input type="text" placeholder="University Name..." name="tdc_board" />
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Subjects Name</label>
+                         <input type="text" placeholder="Subjects Name..." name="tdc_subject" />
+                    </div>
+                    <div class="dynamic_input_div">
+                      <label>Total Marks</label>
+                      <input type="number" placeholder="Total Marks..." name="tdc_tm" />
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Obtained Marks</label>
+                      <input type="number" placeholder="Obtained Marks..." name="tdc_mo" />
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Passing Year</label>
+                         <input type="text" placeholder="Passing Year..." name="tdc_year" />
+                    </div>
+           </div>
+           <!-- ------------------------------------------------------------ -->
+           <div class="qualifiaction-head" >
+                <h6 class="qualifiaction">Other Qualification</h6>
+            </div>
+           <div class="dynamic_form_div">
+                   <div class="dynamic_input_div">
+                      <label>Name of School/College</label>
+                      <input type="text" placeholder="School Name..." name="o_school"/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Board Name</label>
+                      <input type="text" placeholder="Board Name..." name="o_board"/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Subjects Name</label>
+                         <input type="text" placeholder="Subjects Name..." name="o_subject"/>
+                    </div>
+                    <div class="dynamic_input_div">
+                      <label>Total Marks</label>
+                      <input type="number" placeholder="Total Marks..." name="o_tm"/>
+                  </div>
+                  <div class="dynamic_input_div">
+                      <label>Obtained Marks</label>
+                      <input type="number" placeholder="Obtained Marks..." name="o_mo"/>
+                 </div>
+                  <div class="dynamic_input_div">
+                          <label>Passing Year</label>
+                         <input type="text" placeholder="Passing Year..." name="o_year"/>
+                    </div>
+           </div>
+         </div>
+    </div>
+    
+    <div class="dynamic_form_div">
+      <div class="dynamic_input_div">
+        <label>Upload Signature</label>
+        <input type="file" class="form-control" name="sign" accept=".jpg,.JPG,.png,.PNG,.jpeg,.JPEG" required/>
+      </div>
+    </div>
+    
+    <div class="dynamic_form_div">
+      <div class="dynamic_input_div">
+        <label>Upload Passport Photograph</label>
+        <input type="file" class="form-control" name="photo" accept=".jpg,.JPG,.png,.PNG,.jpeg,.JPEG" required/>
+      </div>
+    </div>
+    
+    <div class="dynamic_form_div">
+      <div class="dynamic_input_div">
+        <label>Upload Payment Receipt</label>
+        <input type="file" class="form-control" name="pop" accept=".jpg,.JPG,.png,.PNG,.jpeg,.JPEG" required/>
+      </div>
+    </div>
+    
+    <!-- -------------------------------------dynamic form ended------------------------------ -->
+    <div class="course_applied_container mt-4">
+        <div class="course_select_div">
+              <label for="select-option">Course Applied for</label>
+               <select id="select-option" name="course" class="select_tag" required>
+                    <option value="1" selected>select your course</option>
+                    <option value="2">One year course</option>
+                    <option value="3">Two years course</option>
+                    <option value="3">Three years course</option>
+               </select>
+        </div>  
+        </div>
+
+       <!-- <button type="button" id="add-field-buttron" class="add_form_btn">Add</button> -->
+    
+    
+    <div class="px-8 text-center pt-4">
+        <Button type="submit" class="submit_btn" name="submit">Submit</Button>
+    </div> 
+    </form>
+</div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
